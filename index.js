@@ -23,7 +23,7 @@ function foo(){
     }
 
     function captcha(){
-        document.querySelector("mwc-dialog.yes-no-dialog").querySelectorAll("mwc-button")[1].shadowRoot.querySelector("button").click();
+        document.querySelector("body > mwc-dialog > md-text-button:nth-child(3)").shadowRoot.querySelector("#button").click();
     }
 
     setTimeout(keep().clear, 2880000);
